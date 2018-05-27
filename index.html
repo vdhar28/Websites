@@ -3,110 +3,46 @@
 <head>
 	
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Russo+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css" />
+
+	<script type="text/javascript">
+		var imgArray = [
+		  { name: 'b1', image: 'banana.jpg' }, 
+		  { name: 'b2', image: 'apple.jpg' }, 
+		  { name: 'b3', image: 'orange.jpg' }
+		];
+
+
+	</script>
 
 	<title>Café Racers</title>
 	
-	<style type="text/css">
-		
-	* {
-		margin:0px;
-		padding:0px;
-	}
-
-		/*body {
-			background: url("");
-			background-size: 100%;
-			background-repeat: no-repeat;
-		}*/
-
-		ul {
-			position: fixed;
-			overflow: hidden;
-			padding: 0px;
-			width:100%;
-		}
-
-		#center{
-			width: 40%;
-		}
-
-		#mainLink{
-			display: block;
-			text-decoration: none;
-			padding: 20px 0px;
-			color: #36393B;
-			font-size: 20px;
-			background-color: #C49799;
-			border-radius: 10px;
-			transition: background-color 0.5s;		
-		}
-
-		li {
-			display: inline-block;
-			width: 15%;
-			text-align: center;
-			margin-right: -4px;
-		}
-
-		li a.auxTitles {
-			display: block;
-			text-decoration: none;
-			padding: 10px 0px;
-			color: #F2F2F2;
-			font-size: 20px;
-			background-color: #36393B;
-			/*border-radius: 0px;*/
-			transition: background-color 0.5s;
-		}
-
-		li a:hover:not(.active) {
-		background-color: #E8E8E8;
-		color: #171619;
-		}
-
-		li a.active {
-			background-color: #C68D21;
-			border-left-color: #C68D21;
-		}
-
-		div.title {
-			/*margin-top:px;
-			margin-bottom: 10px;
-			margin-left: 90px;
-			margin-right:90px;*/
-			border: 15px solid #C68D21;
-			padding:30px;
-			border-radius: 300px;
-			background-color: #E5E5E5;
-		}
-
-		h1 {
-			color: black ; /* #C13646 */
-			margin: 0px;
-			font-family: 'Orbitron', sans-serif;
-			font-size: 100px;
-			font-family: 'Russo One', sans-serif;
-			text-align: center;
-		}
-
-	</style>
 </head>
+
 <body>
-	<div>
-		<ul>
-			<li><a class = "auxTitles" href="History.html">History</a></li>
-			<li><a class = "auxTitles" href="Mods.html">Mods</a></li>
-			<li id = "center"><a id = "mainLink" class="active" href="index.html">Home</a></li>
-			<li><a class = "auxTitles" href="Schedule.html">Schedule</a></li>
-			<li><a class = "auxTitles" href="Membership.html">Membership</a></li>
+
+	<div id = "navBarDiv">
+		<ul class = "navBar">
+			<li><a href="History.html">History</a>
+			<li><a href="Mods.html">Mods</a>
+			<li id = "center"><a class="active" href="index.html">——— Café Racers ———</a>
+			<li><a href="Bikes.html">Bikes</a>
+			<li><a href="Transformations.html">Transformations</a>
 		</ul>
 	</div>
 
-	<div>
-		<div class="title">
-			<h1 class="maintitle">Café Racers</h1>
+	<div id = "bodyDiv">
+		<div id="centerImg">
+			<!-- <img src="images/cafe1.jpg"> -->
 		</div>
 	</div>
 
 </body>
 </html>
+
+<!-- https://stackoverflow.com/questions/26375659/why-font-family-affects-the-space-between-the-buttons -->
+<!-- https://www.w3schools.com/css/css_inline-block.asp -->
+<!-- https://stackoverflow.com/questions/9601357/placing-border-inside-of-div-and-not-on-its-edge -->
+<!-- https://css-tricks.com/forums/topic/change-body-background-every-10-sec/ -->
+<!-- https://stackoverflow.com/questions/8810927/showing-an-image-from-an-array-of-images-javascript -->

@@ -1,0 +1,98 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color: #F6F7D4;
+}
+
+#navBarDiv{
+	height: 46px; 
+	background-color: #F6F7D4;
+}
+
+#center{
+	width: 40%;
+	display: inline-block;
+}
+
+#center a{
+	display: block;
+	background-color: #E6AC27;
+	color: #36393B;
+	font-weight: 400;
+	list-style-position:inside;
+}
+
+#bodyDiv{
+	/*width: : 100%; 
+	display: block;*/
+}
+
+#centerImg {
+	margin: 0 auto;
+	width: 78vh;
+	height: 78vh;
+	border: 15px solid #E6AC27;
+	border-radius: 50%;
+	background-color: #F6F7D4;
+	transform: translateY(6vh);
+
+	background-image: url('images/cafe1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+
+	/*background: url("");
+	background-size: 100%;
+	background-repeat: no-repeat;*/
+}
+
+#centerImg img{
+	/*margin: 0 auto;
+	height: 100%; 
+	width: 100%; 
+	object-fit: contain*/
+	background-image: src('images/cafe1.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-clip: padding-box;
+}
+
+
+ul.navBar {
+	position: fixed;
+	overflow: hidden;
+	padding: 0px;
+	width:100%;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+}
+
+ul.navBar li {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	background-color: #36393B;
+	border-bottom:4px solid #F6F7D4;
+}
+
+ul.navBar li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 0px;
+	color: #F2F2F2;
+	font-size: 20px;
+	transition: background-color 0.5s, margin-top 0.5s, color 0.5s;
+}
+
+ul.navBar li a:hover:not(.active) {
+background-color: #F6F7D4;
+color: #171619;
+margin-top: 10px;
+border-bottom: #171619;
+}
+
+ul.navBar li a.active {
+}
