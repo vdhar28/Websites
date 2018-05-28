@@ -20,29 +20,27 @@ body {
 #center a{
 	display: block;
 	background-color: #E6AC27;
-	color: #36393B;
-	font-weight: 400;
+	color: #655643;
+	font-weight: bold;
 	list-style-position:inside;
 }
 
-#bodyDiv{
-	/*width: : 100%; 
-	display: block;*/
-}
-
 #centerImg {
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	width: 78vh;
 	height: 78vh;
-	border: 15px solid #E6AC27;
+	border: 1vw solid #E6AC27;
 	border-radius: 50%;
+	padding: 0px;
 	background-color: #F6F7D4;
 	transform: translateY(6vh);
+	overflow: hidden;
+	\
 
-	background-image: url('images/cafe1.jpg');
+	/*background-image: url('images/cafe1.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-clip: padding-box;
+    background-clip: padding-box;*/
 
 	/*background: url("");
 	background-size: 100%;
@@ -50,32 +48,31 @@ body {
 }
 
 #centerImg img{
-	/*margin: 0 auto;
+	margin: 0 auto;
 	height: 100%; 
 	width: 100%; 
-	object-fit: contain*/
-	background-image: src('images/cafe1.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-clip: padding-box;
+	object-fit: contain
+
 }
 
 
 ul.navBar {
 	position: fixed;
 	overflow: hidden;
+	/*background-color: 655643;*/
 	padding: 0px;
 	width:100%;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 100;
+	z-index: 2;
 }
 
 ul.navBar li {
 	display: inline-block;
 	width: 15%;
 	text-align: center;
-	background-color: #36393B;
-	border-bottom:4px solid #F6F7D4;
+	background-color: #655643;
+	/*border-bottom:4px solid #F6F7D4;*/
 }
 
 ul.navBar li a {
@@ -88,11 +85,46 @@ ul.navBar li a {
 }
 
 ul.navBar li a:hover:not(.active) {
-background-color: #F6F7D4;
-color: #171619;
-margin-top: 10px;
-border-bottom: #171619;
+	background-color: #80BCA3;
+	/*color: #171619;*/
+	margin-top: 10px;
+	border-bottom: #171619;
 }
 
-ul.navBar li a.active {
+ul.navBar li a.active:hover{
+	margin-top: 10px;
+}
+
+
+div.page{
+	width: 100%; 
+	height: 100vh;
+	display: block;
+	padding-top: 46px;
+	/*position: ;*/
+}
+
+div.sideContent{
+	width: 27%;
+	height:81vh;
+	/*background-color: red;*/
+	transform: translateY(6vh);
+}
+
+.sideContent div{
+	width: 80%;
+	height: 100%;
+	/*background-color: blue;*/
+	margin: 0 auto;
+	/*border: 0.5vw solid #655643;*/
+	/*border-radius: 20px;*/
+}
+
+.sideContent div p{
+	font-family: 'Dancing Script', cursive;
+	font-style: bold;
+	font-size: 2.3vw;
+	margin-top: 40%;
+	text-align: center;
+	color: #655643;
 }

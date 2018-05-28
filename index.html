@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi|Russo+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 	<link rel = "stylesheet" type = "text/css" href = "styles.css" />
 
 	<script type="text/javascript">
 		var imgArray = [
-		  { name: 'b1', image: 'banana.jpg' }, 
-		  { name: 'b2', image: 'apple.jpg' }, 
-		  { name: 'b3', image: 'orange.jpg' }
+		  { name: 'b1', image: 'images/cafe1.jpg' }, 
+		  { name: 'b2', image: 'images/cafe2.jpg' }, 
+		  { name: 'b3', image: 'images/headlight.jpg' }
 		];
-
-
 	</script>
 
 	<title>Café Racers</title>
@@ -24,25 +21,74 @@
 
 	<div id = "navBarDiv">
 		<ul class = "navBar">
-			<li><a href="History.html">History</a>
-			<li><a href="Mods.html">Mods</a>
-			<li id = "center"><a class="active" href="index.html">——— Café Racers ———</a>
-			<li><a href="Bikes.html">Bikes</a>
-			<li><a href="Transformations.html">Transformations</a>
+			<li><a href="#history">History</a>
+			<li><a href="#mods">Mods</a>
+			<li id = "center"><a class="active" href="#top">Café Racers</a>
+			<li><a href="#bikes">Bikes</a>
+			<li><a href="#transformations">Transformations</a>
 		</ul>
 	</div>
 
-	<div id = "bodyDiv">
-		<div id="centerImg">
-			<!-- <img src="images/cafe1.jpg"> -->
+	<div class = "page">
+		<div style="display: flex; justify-content: space-between;">
+			<div class="sideContent">
+				<div>
+					<p>Lightweight, minimalistic motorcycles made for speed. Designs inspired by the 60s Grand Prix bikes.</p>
+				</div>
+			</div>
+
+			<div id="centerImg">
+				<img src="images/cafe1.jpg">
+			</div>
+			<div class="sideContent">
+				<div>
+					<p>"Nevermind the track. The track is for punks. We are Road People. We are Café Racers." </p><p>- Hunter S. Thompson</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div>
+		<div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div>
+		<div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div> -->
+
+	
+	</div>
+	<div class = "page" id="history">
+		<div style="padding: 5%;">
+			<div style="height: inherit; background-color: #BF4D28; border-radius: 2vw; opacity: 0.85; padding: 50px;">
+				<h1>History</h1>
+				<p>Cafe</p>
+			</div>
 		</div>
 	</div>
+	<div class = "page" id="mods" style="background-color: green;">
+
+	</div>
+	<div class = "page" id="bikes" style="background-color: blue;">
+
+	</div>
+	<div class = "page" id="transformations" style="background-color: purple;">
+
+	</div>
+
+
 
 </body>
 </html>
+
+<!-- References Used -->
+
+<!-- https://coolors.co/655643-e5ac27-bf4d28-80bca3-f6f7d4 --> 
+<!-- VINTAGE COLOR SCHEME ^ -->
 
 <!-- https://stackoverflow.com/questions/26375659/why-font-family-affects-the-space-between-the-buttons -->
 <!-- https://www.w3schools.com/css/css_inline-block.asp -->
 <!-- https://stackoverflow.com/questions/9601357/placing-border-inside-of-div-and-not-on-its-edge -->
 <!-- https://css-tricks.com/forums/topic/change-body-background-every-10-sec/ -->
 <!-- https://stackoverflow.com/questions/8810927/showing-an-image-from-an-array-of-images-javascript -->
+<!-- https://css-tricks.com/equidistant-objects-with-css/ -->
+<!-- https://stackoverflow.com/questions/1122381/how-to-force-child-div-to-100-of-parents-div-without-specifying-parents-heigh -->
+<!-- https://cssnewbie.com/setting-opacity-of-background-color-transparent/#.WwwW9VMvzOQ -->
+<!-- https://www.w3schools.com/cssref/pr_dim_height.asp -->
+
+
