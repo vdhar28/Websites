@@ -33,9 +33,8 @@ body {
 	border-radius: 50%;
 	padding: 0px;
 	background-color: #F6F7D4;
-	transform: translateY(6vh);
+	/*transform: translateY(6vh);*/
 	overflow: hidden;
-	\
 
 	/*background-image: url('images/cafe1.jpg');
     background-repeat: no-repeat;
@@ -53,6 +52,23 @@ body {
 	width: 100%; 
 	object-fit: contain
 
+}
+
+#oldPics div{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	/*background-color: red;*/
+	line-height: 0;
+}
+
+#oldPics div img{
+	width:80%;
+	height:auto;
+	border: .3vw solid #655643;
+	border-radius: 2vw;
+	display: block;
+	margin: auto;
 }
 
 
@@ -98,10 +114,19 @@ ul.navBar li a.active:hover{
 
 div.page{
 	width: 100%; 
-	height: 100vh;
+	/*height: 100vh;*/
 	display: block;
 	padding-top: 46px;
-	/*position: ;*/
+	/*overflow: scroll;*/
+	font-family: 'Roboto Slab', serif;
+}
+
+div.pageWithoutHeightConstriction{
+	width: 100%; 
+	display: block;
+	padding-top: 46px;
+	/*overflow: scroll;*/
+	font-family: 'Roboto Slab', serif;
 }
 
 div.sideContent{
@@ -127,4 +152,44 @@ div.sideContent{
 	margin-top: 40%;
 	text-align: center;
 	color: #655643;
+}
+
+h1.title{
+	color: #F6F7D4;
+	font-family: 'Dancing Script', cursive;
+	font-style: bold;
+	font-size: 5vw
+}
+
+div.chartSetup{
+	display: block;
+	width: inherit;
+	height: 51%;
+	margin: 0 auto;
+	/*background-color: blue;*/
+	/*border-radius: 4vw;*/
+	overflow: hidden;
+	padding: 1vw;
+}
+
+div.chartSetup div{
+	display: inline-block;
+	width: 50%;
+	height: inherit;
+	margin: 0 auto;
+	/*background-color: red;*/
+	/*padding: 5px;*/
+	/*padding: 1vw;*/
+
+}
+
+.chartSetup img{
+	/*width: 100px;
+	height:100px;*/
+	width:90%;
+	height:auto;
+	vertical-align:top;
+	margin: auto;
+	display: block;
+	border-radius: 3vw;
 }

@@ -7,10 +7,36 @@
 
 	<script type="text/javascript">
 		var imgArray = [
-		  { name: 'b1', image: 'images/cafe1.jpg' }, 
-		  { name: 'b2', image: 'images/cafe2.jpg' }, 
-		  { name: 'b3', image: 'images/headlight.jpg' }
+		  'images/cafe1.jpg', 
+		  'images/cafe2.jpg', 
+		  'images/headlight.jpg'
 		];
+
+		let i = 0;
+
+		setTimeout(function() {
+			nextImage(i);
+			i = (i + 1) % imgArray.length;
+		}, 3000);
+
+	function nextImage(element)
+	{
+    var img = document.getElementById("centerPicture");
+    img.src = imgArray[element];
+
+    // for(var i = 0; i < imgArray.length;i++)
+    // {
+    //     if(imgArray[i].src == img.src) // << check this
+    //     {
+    //         if(i === imgArray.length){
+    //             document.getElementById(element).src = imgArray[0].src;
+    //             break;
+    //         }
+    //         document.getElementById(element).src = imgArray[i+1].src;
+    //         break;
+    //     }
+    // }
+}
 	</script>
 
 	<title>Café Racers</title>
@@ -38,7 +64,7 @@
 			</div>
 
 			<div id="centerImg">
-				<img src="images/cafe1.jpg">
+				<img id="centerPicture" src="images/cafe1.jpg">
 			</div>
 			<div class="sideContent">
 				<div>
@@ -53,22 +79,85 @@
 
 	
 	</div>
-	<div class = "page" id="history">
-		<div style="padding: 5%;">
+	<div class = "pageWithoutHeightConstriction" id="history">
+		<div style="padding: 1%;">
 			<div style="height: inherit; background-color: #BF4D28; border-radius: 2vw; opacity: 0.85; padding: 50px;">
-				<h1>History</h1>
-				<p>Cafe</p>
+				<h1 class="title">History</h1>
+				<br>
+				<p style="font-size: 1.4vw;">Café racing is perhaps the most influential motorcycle movement the world has ever seen. Born in the streets of England in the late 1950s and early 60s, its culture still thrives around the globe. There will never be another motorcycle—or rider—quite like it. And yet, most of us have never heard of the café racer.<br><br>
+
+				'Café racer' refers to both man and machine. With its Spartan appearance and aggressive styling, the café racer is one of the most distinctive and revered motorcycles in the world. Their impact on the motorcycle industry includes legendary high-performance motorcycles like Triumph’s Bonneville, Honda’s CB-750, and Kawasaki’s Z-1. Without the original café racers tuning and designing their ordinary street bikes for power and handling, manufacturers may never have designed the modern sportbike.<br><br>
+
+				The café racer movement may have been born in London in the 1950s, but it has developed into a subculture encompassing a desire for speed, a love of rock and roll, and ultimately an enduring love for a motorcycle that’s being revived worldwide.<br><br>
+
+				The human side of the café racer was a perfect match for this type of motorcycle. The riders of these machines were young, and they wanted to go fast. The goal of many of the café racers during the 50s was the ability to hit a hundred miles an hour, better known as “the ton.” Author and journalist Mike Seate has been following the café racer for two decades. “The term café racer came from what’s actually a derisive term used to describe kids who hung out in cafés and raced fast. They would hang out in transport cafés and wait until somebody else came by on a fast bike and challenged them for a race, and they all rushed outside to see who gets up the road the fastest. When they get back to the cafés, which were often occupied by long distance truck drivers, the truck drivers would laugh and say, ‘You’re not a real racer, you’re not Barry Sheen, you’re just a café racer! And the kids thought, ‘Well you’re damn right I’m a café racer!’ So they would race to the next café, and then to the next one as fast as they could, and the name stuck; they embraced it despite the fact that it was a derisive term,” he said.<br><br>
+
+				One of the birthplaces of the café racer was London’s Ace Café. The Ace was one of many cafés that provided a gathering place for teenagers and their motorcycles in the 1950s and 60s. Many, like the Busy Bee and Café Rising Sun have succumbed to the wrecking ball, while others, such as Jack’s Hill and Squires Coffee Bar have survived, hosting annual Ton-Up reunions each year. Avid motorcyclist Mark Wilsmore, who reopened the Ace Café to its former glory in 1994, says that rock and roll helped spark the subculture known as “ The Café Racing.” “These kids over here, they have been the generation—rock and roll generation—they went out and bought the fastest vehicle they could afford, which over here was a motorbike. In the States, that was a car, and you had your hot rod culture come directly out of Elvis Presley and that lot, but over here, we had a similar sort of thing, but all based around motorbikes because of our different income levels. And the other great attraction of cafés, and I suspect diners in the states at that time, was the jukebox. And certainly in this country, when rock and roll first came around in the mid-50s you could only hear rock and roll on the jukebox. There was no radio stations playing it, no clubs playing it, so this new music of youngsters mixed with having their own vehicles and their own identity, um, along comes this Ton-Up boy and his bike, the café racer, it was invariably—the racing would be from one café to another,” he said.<br><br>
+
+				The hunger to make their ordinary streetbikes go faster and resemble the machines ridden by British racing heroes like Mike Hailwood and Geoff Duke was all part of the café racer’s character. Doing the “Ton,” or hitting a hundred miles-an-hour, became a badge of honor—weather you made it back…or not.<br><br>
+
+				But the reason I am making this website is because of the revival. In recent years, around the globe, café racer culture has become popular again, with older generations reconnecting with their adventurous youth and younger generations discovering the creativity and freedom cafe racing has to offer. Enthusiasts of all ages are once again building custom high-performance motorcycles out of their garages—machines that continue the tradition of the café racer.</p><br><br>
+
+				<a href="http://caferacertv.com/the-history-of-cafe-racers/">*Sourced from CaféRacers TV</a><br><br><br>
+
+				<div id="oldPics">
+					<div><a href="http://www.pipeburn.com/home/2017/09/26/bmw-r100-cafe-racer-ironwood.html"><img id="" src="images/oldcafe3.jpeg"></a></div><!-- 
+					 --><div><a href="https://re-psycle.com/Motorcycles-BMW-R100-7-1978-Lithopolis-OH-5c85e6e9-dc9d-4dd5-994b-a66c0030ab1e"><img id="" src="images/oldcafe2.jpeg"></a></div><!--
+					 --><div><img id="" src="images/oldcafe.jpg"></div>
+				</div>
+
 			</div>
 		</div>
 	</div>
-	<div class = "page" id="mods" style="background-color: green;">
-
+	<div class = "page" id="mods" style="background-color: ;">
+		<div style="padding: 1%;">
+			<div style="height: inherit; background-color: #E5AC27; border-radius: 2vw; opacity: 0.85; padding: 50px;">
+				<h1 class="title">Common Modifications/Upgrades</h1>
+				<br>
+				<ol>
+					<li>Replace seat</li>
+					<li>Replace exhaust</li>
+					<li>Remove stock mufflers</li>
+					<li>Install clip-on handlebars</li>
+					<li>Repaint gastank</li>
+					<li>Upgrade suspension</li>
+					<li>Maintain carbeurators</li>
+				</ol>
+			</div>
+		</div>
 	</div>
-	<div class = "page" id="bikes" style="background-color: blue;">
-
+	<div class = "page" id="bikes" style="background-color: ;">
+		<div style="padding: 1%;">
+			<div style="height: inherit; background-color: #80BCA3; border-radius: 2vw; opacity: 0.85; padding: 50px;">
+				<h1 class="title">Most Common Bikes</h1>
+				<br>
+				<ul>
+					<li>Honda CB-series</li>
+					<li>Honda CX-series</li>
+					<li>Kawasaki Z-series</li>
+					<li>BMW R-series</li>
+					<li>Suzuki GS-series</li>
+					<li>Yamaha XS-series</li>
+				</ul>
+			</div>
+		</div>
 	</div>
-	<div class = "page" id="transformations" style="background-color: purple;">
-
+	</div>
+	<div class = "page" id="transformations" style="background-color: ;">
+		<div style="padding: 1%;">
+			<div style="height: inherit; background-color: #655643; border-radius: 2vw; opacity: 0.85; padding: 50px;">
+				<h1 class="title">Transformations</h1>
+				<br><br>
+				<div class="chartSetup">
+					<div><a href="http://www.sohc4.net/cb550/"><img id="" src="images/transform1stock.jpg"></a></div><!-- 
+					 --><div><a href="https://www.youtube.com/watch?v=oUaljiTGs00"><img id="" src="images/transform1modded.jpg"></a></div>
+				</div>
+				<div class="chartSetup">
+					<div><a href="https://re-psycle.com/Motorcycles-BMW-R100-7-1978-Lithopolis-OH-5c85e6e9-dc9d-4dd5-994b-a66c0030ab1e"><img id="" src="images/transform2stock.jpg"></a></div><!-- 
+					 --><div><a href="http://www.pipeburn.com/home/2017/09/26/bmw-r100-cafe-racer-ironwood.html"><img id="" href="http://www.pipeburn.com/home/2017/09/26/bmw-r100-cafe-racer-ironwood.html" src="images/transform2modded.jpg"></a></div><!-- 
+				 --></div>
+			</div>
+		</div>
 	</div>
 
 
