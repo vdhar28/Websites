@@ -1,11 +1,23 @@
+<!-- 
+Summary: Website about cafe racers
+
+Author: Vish Dhar
+Submission Date: Tuesday, May 29, 2018
+Teacher: Dr. Zufelt 
+
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
+
+	<!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
 	<link rel = "stylesheet" type = "text/css" href = "styles.css" />
 
-	<script type="text/javascript">
+<!-- Tried messing around with javascript but it didnt work -->
+<!-- 	<script type="text/javascript">
 		var imgArray = [
 		  'images/cafe1.jpg', 
 		  'images/cafe2.jpg', 
@@ -37,7 +49,7 @@
     //     }
     // }
 }
-	</script>
+	</script> -->
 
 	<title>Café Racers</title>
 	
@@ -45,6 +57,7 @@
 
 <body>
 
+<!-- Navigation Bar -->
 	<div id = "navBarDiv">
 		<ul class = "navBar">
 			<li><a href="#history">History</a>
@@ -55,30 +68,32 @@
 		</ul>
 	</div>
 
+<!-- Top of the webpage -->
 	<div class = "page">
 		<div style="display: flex; justify-content: space-between;">
-			<div class="sideContent">
+
+			<!-- Left Text Field area -->
+			<div class="sideContent"> 
 				<div>
 					<p>Lightweight, minimalistic motorcycles made for speed. Designs inspired by the 60s Grand Prix bikes.</p>
 				</div>
 			</div>
 
+			<!-- Centered image with circular border -->
 			<div id="centerImg">
 				<img id="centerPicture" src="images/cafe1.jpg">
 			</div>
+
+			<!-- Right Text Field area -->
 			<div class="sideContent">
 				<div>
 					<p>"Nevermind the track. The track is for punks. We are Road People. We are Café Racers." </p><p>- Hunter S. Thompson</p>
 				</div>
 			</div>
-		</div>
-
-		<!-- <div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div>
-		<div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div>
-		<div style="width:20px; height: 20px; background-color: red; display: inline-block;"></div> -->
-
-	
+		</div>	
 	</div>
+
+	<!-- First subsection—history -->
 	<div class = "pageWithoutHeightConstriction" id="history">
 		<div style="padding: 1%;">
 			<div style="height: inherit; background-color: #BF4D28; border-radius: 2vw; opacity: 0.85; padding: 50px;">
@@ -100,20 +115,25 @@
 
 				<a href="http://caferacertv.com/the-history-of-cafe-racers/">*Sourced from CaféRacers TV</a><br><br><br>
 
+				<!-- Pictures -->
 				<div id="oldPics">
-					<div><a href="http://www.pipeburn.com/home/2017/09/26/bmw-r100-cafe-racer-ironwood.html"><img id="" src="images/oldcafe3.jpeg"></a></div><!-- 
-					 --><div><a href="https://re-psycle.com/Motorcycles-BMW-R100-7-1978-Lithopolis-OH-5c85e6e9-dc9d-4dd5-994b-a66c0030ab1e"><img id="" src="images/oldcafe2.jpeg"></a></div><!--
+					<div><img id="" src="images/oldcafe3.jpeg"></div><!-- 
+					 --><div><img id="" src="images/oldcafe2.jpeg"></div><!--
 					 --><div><img id="" src="images/oldcafe.jpg"></div>
 				</div>
 
 			</div>
 		</div>
 	</div>
+
+	<!-- Second subsection—mods -->
 	<div class = "page" id="mods" style="background-color: ;">
 		<div style="padding: 1%;">
 			<div style="height: inherit; background-color: #E5AC27; border-radius: 2vw; opacity: 0.85; padding: 50px;">
 				<h1 class="title">Common Modifications/Upgrades</h1>
 				<br>
+
+				<!-- ordered list -->
 				<ol>
 					<li>Replace seat</li>
 					<li>Replace exhaust</li>
@@ -126,11 +146,15 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Third subsection—bikes -->
 	<div class = "page" id="bikes" style="background-color: ;">
 		<div style="padding: 1%;">
 			<div style="height: inherit; background-color: #80BCA3; border-radius: 2vw; opacity: 0.85; padding: 50px;">
 				<h1 class="title">Most Common Bikes</h1>
 				<br>
+
+				<!-- unodered list -->
 				<ul>
 					<li>Honda CB-series</li>
 					<li>Honda CX-series</li>
@@ -142,12 +166,15 @@
 			</div>
 		</div>
 	</div>
-	</div>
+
+<!-- Fourth subsection—transformations -->
 	<div class = "page" id="transformations" style="background-color: ;">
 		<div style="padding: 1%;">
 			<div style="height: inherit; background-color: #655643; border-radius: 2vw; opacity: 0.85; padding: 50px;">
 				<h1 class="title">Transformations</h1>
 				<br><br>
+
+				<!-- Pictures with clickable links -->
 				<div class="chartSetup">
 					<div><a href="http://www.sohc4.net/cb550/"><img id="" src="images/transform1stock.jpg"></a></div><!-- 
 					 --><div><a href="https://www.youtube.com/watch?v=oUaljiTGs00"><img id="" src="images/transform1modded.jpg"></a></div>
